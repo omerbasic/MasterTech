@@ -33,7 +33,7 @@ export default {
     return {
       loading: false,
       lineItems: formattedProducts,
-      successURL: 'http://134.122.98.190/confirmation',
+      successURL: 'http://localhost:8000/confirmation',
       cancelURL: 'https://google.se',
     };
   },
