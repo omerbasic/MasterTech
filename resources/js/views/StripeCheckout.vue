@@ -42,6 +42,9 @@ export default {
     methods: {
         // You will be redirected to Stripe's secure checkout page
      submit () {
+       let orderArray = JSON.parse(localStorage.getItem('bigStore.cart'));
+        console.log("test");
+        console.log(orderArray);
          this.$refs.checkoutRef.redirectToCheckout();
     },  
     },
