@@ -10,6 +10,7 @@
       :cancel-url="cancelURL"
       @loading="v => loading = v"
     />
+    <h1>Proceed to Stripe Checkout</h1>
     <button @click="submit">Pay now!</button>
   </div>
 </template>
