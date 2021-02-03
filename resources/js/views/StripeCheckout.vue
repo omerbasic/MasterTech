@@ -23,6 +23,7 @@ export default {
   data () {
     this.publishableKey = 'pk_test_51HMTldKEUIKsCRFh6xC4GVU96lW0bbRsLDsYszzZEJUwLsSgNK3pOYv1RLWfBHHkVHONcNQdtJkB6mhXvQBkmdxw00nd03I4rP';
     let orderArray = JSON.parse(localStorage.getItem('bigStore.cart'));
+    console.log("test");
     console.log(orderArray);
     let formattedProducts = orderArray.map((product) => {
             return {
@@ -34,7 +35,7 @@ export default {
     return {
       loading: false,
       lineItems: formattedProducts,
-      successURL: 'http://localhost:8000/confirmation',
+      successURL: 'http://134.122.98.190/confirmation',
       cancelURL: 'https://google.se',
     };
   },
