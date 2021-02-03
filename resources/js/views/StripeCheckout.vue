@@ -23,6 +23,7 @@ export default {
   data () {
     this.publishableKey = 'pk_test_51HMTldKEUIKsCRFh6xC4GVU96lW0bbRsLDsYszzZEJUwLsSgNK3pOYv1RLWfBHHkVHONcNQdtJkB6mhXvQBkmdxw00nd03I4rP';
     let orderArray = JSON.parse(localStorage.getItem('bigStore.cart'));
+    console.log(orderArray);
     let formattedProducts = orderArray.map((product) => {
             return {
                 price: product.product_api, // The id of the one-time price you created in your Stripe dashboard
